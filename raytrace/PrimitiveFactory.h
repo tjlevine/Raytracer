@@ -44,7 +44,7 @@ class PrimitiveFactory
 
             } ParamProxy;
 
-            ParamProxy* params;
+            ParamProxy params;
 
             static const float NaN;
 

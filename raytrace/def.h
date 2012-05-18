@@ -10,15 +10,15 @@
 #define MISS	0
 #define INPRIM	-1
 
-#define VIEW_WINDOW_X1 -4
-#define VIEW_WINDOW_Y1 3
+#define VIEW_WINDOW_X1 -1
+#define VIEW_WINDOW_Y1 1
 
-#define VIEW_WINDOW_X2 4
-#define VIEW_WINDOW_Y2 -3
+#define VIEW_WINDOW_X2 1.1
+#define VIEW_WINDOW_Y2 -1
 
 #define CAM_X 0
 #define CAM_Y 0
-#define CAM_Z -1
+#define CAM_Z -1.1
 
 #define WINDOW_TITLE "raytracer"
 #define WINDOW_UPDATE_DELAY 0

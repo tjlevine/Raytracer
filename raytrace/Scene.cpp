@@ -46,27 +46,30 @@ void Scene::build()
 	//addPrim( p );
 
 	// big sphere
-	pf->pos( Vec3( 5, 3.8f, -10 ) );
+	pf->pos( Vec3( -5, 0.8f, 7 ) );
 	pf->radius( 2.5f );
 	pf->color( sf::Color( 0.0f * 255, 1.0f * 255, 0.0f * 255 ) );
-	//pf->diffusion( 0.4f );
-	//pf->reflectivity( 0.5f );
+	pf->diffusion( 0.4f );
+	pf->reflectivity( 0.5f );
 	pf->name( "big sphere" );
 	p = pf->build( Primitive::SPHERE );
 	addPrim( p );
 
-	//p = new Sphere( Vec3( 5, 3.8f, 10 ), 2.5f );
-	//m = new Material( sf::Color( 0.9f * 255, 0.7f * 255, 0.9f * 255 ), 0.4f, 0.5f );
-	//p->setName( "big sphere" );
-	//p->setMaterial( m );//->setReflectivity( 0.6f )->setDiffusion( 0.5f )->setColor( Color( 0.7f, 0.7f, 0.7f ) );
-	//addPrim( p );
+	pf->pos( Vec3( 5, 3.8f, 7 ) );
+    pf->radius( 1.5f );
+	pf->color( sf::Color( 0.9f * 255, 0.7f * 255, 0.9f * 255 ) );
+    pf->diffusion( 0.4f );
+    pf->reflectivity( 0.5f );
+	pf->name( "big sphere" );
+	p = pf->build( Primitive::SPHERE ); //->setMaterial( m );//->setReflectivity( 0.6f )->setDiffusion( 0.5f )->setColor( Color( 0.7f, 0.7f, 0.7f ) );
+	addPrim( p );
 
 	// small sphere
-	p = new Sphere( Vec3( -4.5f, -0.5, 7 ), 2 );
-	m = new Material( sf::Color( 1.0f * 255, 1.0f * 255, 1.0f * 255 ), 0.4f, 0.5f );
-	p->setName( "small sphere" );
-	p->setMaterial( m );
-	addPrim( p );
+	//p = new Sphere( Vec3( -4.5f, -0.5, 7 ), 2 );
+	//m = new Material( sf::Color( 1.0f * 255, 1.0f * 255, 0.0f * 255 ), 0.4f, 0.5f );
+	//p->setName( "small sphere" );
+	//p->setMaterial( m );
+	//addPrim( p );
 
 	//add a bunch of small spheres
 
